@@ -23,8 +23,7 @@ input.addEventListener('input', debounce((ev) => {
         clearHtml();
         return;
     };
-
-    console.log(ev);
+    
     fetchCountries(url)
         .then((countries) => {
             if (countries.length === 1) {
